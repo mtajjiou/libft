@@ -6,7 +6,7 @@
 /*   By: mtajjiou <mtajjiou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/26 19:40:18 by mtajjiou          #+#    #+#             */
-/*   Updated: 2018/03/04 12:39:25 by mtajjiou         ###   ########.fr       */
+/*   Updated: 2018/03/12 10:33:23 by mtajjiou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 int		ft_isalpha(int c)
 {
-		return (ft_isupper(c) || ft_islower(c));
+	return (ft_isupper(c) || ft_islower(c));
 }

@@ -21,7 +21,7 @@ void	*ft_memmove(void *destination, const void *source, size_t n)
 	i = 0;
 	c1 = (char*)source;
 	c2 = (char*)destination;
-	if(source > destination)
+	if (source > destination)
 	{
 		while (i < n)
 		{
@@ -36,6 +36,5 @@ void	*ft_memmove(void *destination, const void *source, size_t n)
 			c2[n] = c1[n];
 		}
 	}
-	
 	return (c2);
 }

@@ -14,9 +14,9 @@
 
 void	*ft_memcpy(void *s1, const void *s2, size_t n)
 {
-	size_t i;
-	char *c1;
-	char *c2;
+	size_t	i;
+	char	*c1;
+	char	*c2;
 
 	if (!n || s1 == s2)
 		return ((void*)s1);
@@ -28,6 +28,5 @@ void	*ft_memcpy(void *s1, const void *s2, size_t n)
 		c1[i] = c2[i];
 		i++;
 	}
-
 	return (s1);
 }

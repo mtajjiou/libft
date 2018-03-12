@@ -6,7 +6,7 @@
 /*   By: mtajjiou <mtajjiou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/04 14:52:06 by mtajjiou          #+#    #+#             */
-/*   Updated: 2018/03/06 10:55:13 by mtajjiou         ###   ########.fr       */
+/*   Updated: 2018/03/12 10:22:54 by mtajjiou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,13 @@ int		ft_count_whitespaces(char *c)
 	int i;
 	int j;
 
-    j = 0;
+	j = 0;
 	i = 0;
 	while (c[j] != '\0')
 	{
-	    if (c[j] == '\t' || c[j] == '\v' || c[j] == '\f' || c[j] == '\n' || c[j] == '\r' || c[j] == ' ')
-		    i++;
+		if (c[j] == '\t' || c[j] == '\v' || c[j] == '\f'
+			|| c[j] == '\n' || c[j] == '\r' || c[j] == ' ')
+			i++;
 		j++;
 	}
 	return (i);

@@ -6,18 +6,17 @@
 /*   By: mtajjiou <mtajjiou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/04 14:52:06 by mtajjiou          #+#    #+#             */
-/*   Updated: 2018/03/04 15:14:20 by mtajjiou         ###   ########.fr       */
+/*   Updated: 2018/03/12 10:27:57 by mtajjiou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int 	ft_check_whitespace(char c)
+int		ft_check_whitespace(char c)
 {
-	
-	if (c == '\t' || c == '\v' || c == '\f' || c == '\n' || c == '\r' || c == ' ')
+	if (c == '\t' || c == '\v' || c == '\f'
+		|| c == '\n' || c == '\r' || c == ' ')
 		return (1);
 	else
 		return (0);
-	
 }

@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mtajjiou <mtajjiou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/02/26 19:43:38 by mtajjiou          #+#    #+#             */
-/*   Updated: 2018/03/04 11:50:22 by mtajjiou         ###   ########.fr       */
+/*   Created: 2018/03/12 09:55:20 by mtajjiou          #+#    #+#             */
+/*   Updated: 2018/03/12 09:57:26 by mtajjiou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char	*ft_strncpy(char *destination, const char *source, size_t n)
 {
 	char *str;
 
-	if(!n)
+	if (!n)
 		return (destination);
 	str = destination;
 	while (n && *source)
@@ -24,8 +24,7 @@ char	*ft_strncpy(char *destination, const char *source, size_t n)
 		*destination++ = *source++;
 		n--;
 	}
-
-	while(n)
+	while (n)
 	{
 		*destination++ = '\0';
 		n--;

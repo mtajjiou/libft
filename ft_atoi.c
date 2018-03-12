@@ -6,17 +6,17 @@
 /*   By: mtajjiou <mtajjiou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/21 12:58:48 by mtajjiou          #+#    #+#             */
-/*   Updated: 2018/03/04 17:08:53 by mtajjiou         ###   ########.fr       */
+/*   Updated: 2018/03/12 10:10:03 by mtajjiou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *str)
+int					ft_atoi(const char *str)
 {
-	long long int result;
-	int i;
-	int sign;
+	long long int	result;
+	int				i;
+	int				sign;
 
 	i = 0;
 	result = 0;
@@ -39,5 +39,4 @@ int	ft_atoi(const char *str)
 	if (sign)
 		return (-result);
 	return (result);
-
 }

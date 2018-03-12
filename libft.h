@@ -6,7 +6,7 @@
 /*   By: mtajjiou <mtajjiou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/03/01 14:45:32 by mtajjiou          #+#    #+#             */
-/*   Updated: 2018/03/06 10:56:36 by mtajjiou         ###   ########.fr       */
+/*   Updated: 2018/03/12 11:40:09 by mtajjiou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,11 @@
 # include <stdlib.h>
 # include <unistd.h>
 
-typedef struct	s_list
+typedef	struct	s_list
 {
-	void		*content;
-	size_t		content_size;
-	struct		s_list *next;
+	void			*content;
+	size_t			content_size;
+	struct s_list	*next;
 }				t_list;
 
 void			*ft_memset(void *v, int i, int len);
@@ -89,9 +89,8 @@ void			ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
 void			ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void			ft_lstadd(t_list **alst, t_list *new);
 void			ft_lstiter(t_list *lst, void (*f)(t_list *elem));
-t_list			*ft_lstmap(t_list *lst, t_list * (*f)(t_list *elem));
+t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 
-/*ADDITIONAL FUNCTIONS*/
 long int		ft_abs(long int i);
 int				ft_isnegative(int n);
 size_t			ft_count_delim(const char *s1, const char c);
@@ -102,8 +101,5 @@ int				ft_count_words(char const *s, char c);
 char			*ft_strndup(const char *s, size_t n);
 int				ft_check_whitespace(char c);
 int				ft_count_whitespaces(char *c);
-
-
-
 
 #endif
